@@ -15,15 +15,14 @@ spring:
   application:
     name: microservicio-productos
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    password: password
     url: jdbc:mysql://localhost:3306/db_microservicios_producto?autoReconnect=true&useSSL=false&server
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
+    password: password
   jpa:
     database: mysql
     hibernate:
       ddl-auto: update
     show-sql: false
-
 booking:
   property: Bookin Profile Dev
