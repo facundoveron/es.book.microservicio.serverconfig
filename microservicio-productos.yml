@@ -24,3 +24,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
+
+booking:
+  property: Bookin Profile Dev
