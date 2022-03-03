@@ -1,9 +1,28 @@
 eureka:
   client:
-    fetch-registry: false
-    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    health-check-url-path: /healthCatalogo
+    instance-id: ${spring.application.name}
+    metadata-map:
+      app-owner: facundoveron
+      description: aplicacion para practicar
+    status-page-url-path: /infoCatalogo
 server:
-  port: 8761
+  port: 39972
 spring:
   application:
-    name: microservicio-eureka-server
+    name: microservicio-productos
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_microservicios_producto?autoReconnect=true&useSSL=false&server
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+booking:
+  property: Bookin Profile Dev    
