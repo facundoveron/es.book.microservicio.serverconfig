@@ -25,8 +25,9 @@ spring:
       ddl-auto: update
     show-sql: false
   cloud:
-    uri: htpp://localhost:8888
-    username: admin
-    password: mipassword    
+    config:
+      uri: htpp://localhost:8888
+      username: admin
+      password: mipassword    
 booking:
   property: Bookin Profile Dev    
