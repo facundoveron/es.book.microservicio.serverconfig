@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        client-id: tiendaonline
+        client-secret: elsecreto
+        authorized-grant-types: client_credentials
+        scope: all
+          
+server:
+  port: 7777
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
